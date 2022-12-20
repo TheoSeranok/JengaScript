@@ -1,41 +1,692 @@
-# Compiled Lua sources
-luac.out
+local JengaScriptGUI = Instance.new("ScreenGui")
+local GUIFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Towers = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local InstanceWin = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local KillZone = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Noclip = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local GoOnTower = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Teleport = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local BeDestroyer = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local SafeZone = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local Invisible = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local Destroyer = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local XButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local InfYied = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local Audio = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local Remote = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
+local GoOnTower_2 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint")
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+--Properties:
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+JengaScriptGUI.Name = "JengaScriptGUI"
+JengaScriptGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+JengaScriptGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+JengaScriptGUI.ResetOnSpawn = false
 
-# Precompiled Headers
-*.gch
-*.pch
+GUIFrame.Name = "GUIFrame"
+GUIFrame.Parent = JengaScriptGUI
+GUIFrame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+GUIFrame.BorderSizePixel = 0
+GUIFrame.Position = UDim2.new(0.28396377, 0, 0.294871777, 0)
+GUIFrame.Size = UDim2.new(0, 471, 0, 308)
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+UICorner.Parent = GUIFrame
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+Towers.Name = "Towers"
+Towers.Parent = GUIFrame
+Towers.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Towers.Size = UDim2.new(0, 241, 0, 38)
+Towers.Font = Enum.Font.SourceSansBold
+Towers.Text = "Towers"
+Towers.TextColor3 = Color3.fromRGB(255, 255, 255)
+Towers.TextSize = 29.000
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Towers
 
+InstanceWin.Name = "InstanceWin"
+InstanceWin.Parent = Towers
+InstanceWin.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+InstanceWin.Position = UDim2.new(0.0697418898, 0, 1.43848252, 0)
+InstanceWin.Size = UDim2.new(0, 158, 0, 38)
+InstanceWin.Font = Enum.Font.SourceSansBold
+InstanceWin.Text = "Instance Win"
+InstanceWin.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstanceWin.TextSize = 29.000
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = InstanceWin
+
+UIAspectRatioConstraint.Parent = InstanceWin
+UIAspectRatioConstraint.AspectRatio = 4.158
+
+KillZone.Name = "KillZone"
+KillZone.Parent = Towers
+KillZone.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+KillZone.Position = UDim2.new(0.0697418898, 0, 4.46479797, 0)
+KillZone.Size = UDim2.new(0, 158, 0, 38)
+KillZone.Font = Enum.Font.SourceSansBold
+KillZone.Text = "Delete Kill Zone"
+KillZone.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillZone.TextSize = 27.000
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = KillZone
+
+UIAspectRatioConstraint_2.Parent = KillZone
+UIAspectRatioConstraint_2.AspectRatio = 4.158
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Towers
+Noclip.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Noclip.Position = UDim2.new(0.0657860041, 0, 2.96240616, 0)
+Noclip.Size = UDim2.new(0, 158, 0, 38)
+Noclip.Font = Enum.Font.SourceSansBold
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 29.000
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Noclip
+
+UIAspectRatioConstraint_3.Parent = Noclip
+UIAspectRatioConstraint_3.AspectRatio = 4.158
+
+GoOnTower.Name = "GoOnTower"
+GoOnTower.Parent = Towers
+GoOnTower.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+GoOnTower.Position = UDim2.new(0.0688419342, 0, 6.00666428, 0)
+GoOnTower.Size = UDim2.new(0, 158, 0, 38)
+GoOnTower.Font = Enum.Font.SourceSansBold
+GoOnTower.Text = "Go on tower"
+GoOnTower.TextColor3 = Color3.fromRGB(255, 255, 255)
+GoOnTower.TextSize = 29.000
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = GoOnTower
+
+UIAspectRatioConstraint_4.Parent = GoOnTower
+UIAspectRatioConstraint_4.AspectRatio = 4.158
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Towers
+Teleport.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Teleport.Position = UDim2.new(1.19007385, 0, 5.99111462, 0)
+Teleport.Size = UDim2.new(0, 158, 0, 38)
+Teleport.Font = Enum.Font.SourceSansBold
+Teleport.Text = "Tp to Destroyer"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextSize = 27.000
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = Teleport
+
+UIAspectRatioConstraint_5.Parent = Teleport
+UIAspectRatioConstraint_5.AspectRatio = 4.158
+
+BeDestroyer.Name = "BeDestroyer"
+BeDestroyer.Parent = Towers
+BeDestroyer.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+BeDestroyer.Position = UDim2.new(1.19007397, 0, 4.46479797, 0)
+BeDestroyer.Size = UDim2.new(0, 158, 0, 38)
+BeDestroyer.Font = Enum.Font.SourceSansBold
+BeDestroyer.Text = "Be Destroyer"
+BeDestroyer.TextColor3 = Color3.fromRGB(255, 255, 255)
+BeDestroyer.TextSize = 27.000
+
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = BeDestroyer
+
+UIAspectRatioConstraint_6.Parent = BeDestroyer
+UIAspectRatioConstraint_6.AspectRatio = 4.158
+
+SafeZone.Name = "SafeZone"
+SafeZone.Parent = Towers
+SafeZone.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+SafeZone.Position = UDim2.new(1.19007397, 0, 1.43848276, 0)
+SafeZone.Size = UDim2.new(0, 158, 0, 38)
+SafeZone.Font = Enum.Font.SourceSansBold
+SafeZone.Text = "Safe Zone"
+SafeZone.TextColor3 = Color3.fromRGB(255, 255, 255)
+SafeZone.TextSize = 27.000
+
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = SafeZone
+
+UIAspectRatioConstraint_7.Parent = SafeZone
+UIAspectRatioConstraint_7.AspectRatio = 4.158
+
+Invisible.Name = "Invisible"
+Invisible.Parent = Towers
+Invisible.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Invisible.Position = UDim2.new(1.19007397, 0, 2.93848252, 0)
+Invisible.Size = UDim2.new(0, 158, 0, 38)
+Invisible.Font = Enum.Font.SourceSansBold
+Invisible.Text = "Invisible"
+Invisible.TextColor3 = Color3.fromRGB(255, 255, 255)
+Invisible.TextSize = 27.000
+
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = Invisible
+
+UIAspectRatioConstraint_8.Parent = Invisible
+UIAspectRatioConstraint_8.AspectRatio = 4.158
+
+UIAspectRatioConstraint_9.Parent = Towers
+UIAspectRatioConstraint_9.AspectRatio = 6.342
+
+UIAspectRatioConstraint_10.Parent = GUIFrame
+UIAspectRatioConstraint_10.AspectRatio = 1.529
+
+Destroyer.Name = "Destroyer"
+Destroyer.Parent = GUIFrame
+Destroyer.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Destroyer.Position = UDim2.new(0.488322705, 0, 0, 0)
+Destroyer.Size = UDim2.new(0, 241, 0, 38)
+Destroyer.Font = Enum.Font.SourceSansBold
+Destroyer.Text = "Destroyer"
+Destroyer.TextColor3 = Color3.fromRGB(255, 255, 255)
+Destroyer.TextSize = 29.000
+
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = Destroyer
+
+XButton.Name = "XButton"
+XButton.Parent = Destroyer
+XButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+XButton.LayoutOrder = 1000000000
+XButton.Position = UDim2.new(0.893948138, 0, -0.557074547, 0)
+XButton.Size = UDim2.new(0, 52, 0, 50)
+XButton.Font = Enum.Font.SourceSansBold
+XButton.Text = "X"
+XButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+XButton.TextSize = 45.000
+
+UICorner_12.CornerRadius = UDim.new(0, 50)
+UICorner_12.Parent = XButton
+
+UIAspectRatioConstraint_11.Parent = XButton
+UIAspectRatioConstraint_11.AspectRatio = 1.040
+
+UIAspectRatioConstraint_12.Parent = Destroyer
+UIAspectRatioConstraint_12.AspectRatio = 6.342
+
+InfYied.Name = "InfYied"
+InfYied.Parent = Destroyer
+InfYied.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+InfYied.Position = UDim2.new(-0.864768028, 0, 4.42771721, 0)
+InfYied.Size = UDim2.new(0, 158, 0, 38)
+InfYied.Visible = false
+InfYied.Font = Enum.Font.SourceSansBold
+InfYied.Text = "Inf Yield"
+InfYied.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfYied.TextSize = 29.000
+
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = InfYied
+
+UIAspectRatioConstraint_13.Parent = InfYied
+UIAspectRatioConstraint_13.AspectRatio = 4.158
+
+Audio.Name = "Audio"
+Audio.Parent = Destroyer
+Audio.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Audio.Position = UDim2.new(-0.863868058, 0, 1.41216671, 0)
+Audio.Size = UDim2.new(0, 158, 0, 38)
+Audio.Visible = false
+Audio.Font = Enum.Font.SourceSansBold
+Audio.Text = "Remove Audio"
+Audio.TextColor3 = Color3.fromRGB(255, 255, 255)
+Audio.TextSize = 29.000
+
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = Audio
+
+UIAspectRatioConstraint_14.Parent = Audio
+UIAspectRatioConstraint_14.AspectRatio = 4.158
+
+Remote.Name = "Remote"
+Remote.Parent = Destroyer
+Remote.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Remote.Position = UDim2.new(-0.867823958, 0, 2.93609047, 0)
+Remote.Size = UDim2.new(0, 158, 0, 38)
+Remote.Visible = false
+Remote.Font = Enum.Font.SourceSansBold
+Remote.Text = "Speed"
+Remote.TextColor3 = Color3.fromRGB(255, 255, 255)
+Remote.TextSize = 29.000
+
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = Remote
+
+UIAspectRatioConstraint_15.Parent = Remote
+UIAspectRatioConstraint_15.AspectRatio = 4.158
+
+GoOnTower_2.Name = "GoOnTower"
+GoOnTower_2.Parent = Destroyer
+GoOnTower_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+GoOnTower_2.Position = UDim2.new(-0.864768028, 0, 5.98034859, 0)
+GoOnTower_2.Size = UDim2.new(0, 158, 0, 38)
+GoOnTower_2.Visible = false
+GoOnTower_2.Font = Enum.Font.SourceSansBold
+GoOnTower_2.Text = "Go on tower"
+GoOnTower_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+GoOnTower_2.TextSize = 29.000
+
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = GoOnTower_2
+
+UIAspectRatioConstraint_16.Parent = GoOnTower_2
+UIAspectRatioConstraint_16.AspectRatio = 4.158
+
+TextLabel.Parent = GUIFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.56263268, 0, 0.863636315, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Made by DrChampionstein"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+
+UIAspectRatioConstraint_17.Parent = TextLabel
+UIAspectRatioConstraint_17.AspectRatio = 4.000
+
+-- Scripts:
+
+local function LKVJAHA_fake_script() -- GUIFrame.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', GUIFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(LKVJAHA_fake_script)()
+local function RWXB_fake_script() -- InstanceWin.LocalScript 
+	local script = Instance.new('LocalScript', InstanceWin)
+
+	local b = script.Parent
+	local model = game.Workspace.Map.Classic.Tower
+	
+	b.MouseButton1Click:Connect(function()
+		for i, v in pairs(model:GetDescendants()) do
+			model:Destroy() 
+		end
+	end)
+	
+end
+coroutine.wrap(RWXB_fake_script)()
+local function YOREF_fake_script() -- KillZone.LocalScript 
+	local script = Instance.new('LocalScript', KillZone)
+
+	local b = script.Parent
+	local a = game.Workspace.Map.Classic.KillBrick
+	
+	b.MouseButton1Click:Connect(function()
+		a.Transparency = 1
+		a.Code.Disabled = true
+		a.Code:Destroy()
+		wait(0.1)
+		a:Destroy()
+	end)
+	
+end
+coroutine.wrap(YOREF_fake_script)()
+local function BCTCL_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local walkThroughWalls = false
+	
+	button.MouseButton1Click:Connect(function()
+		walkThroughWalls = not walkThroughWalls
+	
+		if walkThroughWalls then
+			player.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Seated)
+		else
+			player.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Running)
+		end
+	end)
+	
+	game:GetService("RunService").Stepped:Connect(function()
+		if walkThroughWalls then
+			local character = player.Character
+			local humanoid = character:FindFirstChild("Humanoid")
+			if humanoid then
+				humanoid.Changed:Connect(function(property)
+					if property == "Sit" then
+						humanoid.Sit = true
+					end
+				end)
+			end
+			for _,v in pairs(character:GetDescendants()) do
+				if v:IsA("BasePart") then
+					v.CanCollide = false
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(BCTCL_fake_script)()
+local function ERFTNES_fake_script() -- GoOnTower.LocalScript 
+	local script = Instance.new('LocalScript', GoOnTower)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		player.Character:SetPrimaryPartCFrame(CFrame.new(-64.338, 225.467, -18.038))
+	end)
+	
+end
+coroutine.wrap(ERFTNES_fake_script)()
+local function XYFZQGT_fake_script() -- Teleport.LocalScript 
+	local script = Instance.new('LocalScript', Teleport)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		player.Character:SetPrimaryPartCFrame(CFrame.new(266.5, 101.03, 27))
+	end)
+	
+end
+coroutine.wrap(XYFZQGT_fake_script)()
+local function STYW_fake_script() -- BeDestroyer.LocalScript 
+	local script = Instance.new('LocalScript', BeDestroyer)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		player.Team = game.Teams.Destroyer
+	end)
+	
+end
+coroutine.wrap(STYW_fake_script)()
+local function XDMGTMK_fake_script() -- SafeZone.LocalScript 
+	local script = Instance.new('LocalScript', SafeZone)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		player.Character:SetPrimaryPartCFrame(CFrame.new(143, 250.5, -18.5))
+	end)
+	
+	
+end
+coroutine.wrap(XDMGTMK_fake_script)()
+local function EENESX_fake_script() -- Invisible.LocalScript 
+	local script = Instance.new('LocalScript', Invisible)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://pst.klgrth.io/paste/2kh42/raw"), true))()
+	end)
+end
+coroutine.wrap(EENESX_fake_script)()
+local function PIRSE_fake_script() -- Towers.ActiveTowersButtons 
+	local script = Instance.new('LocalScript', Towers)
+
+	local button = script.Parent
+	local bedestr = button.BeDestroyer
+	local goonTower = button.GoOnTower
+	local InstanceWin = button.InstanceWin
+	local Invi = button.Invisible
+	local killzone = button.KillZone
+	local noclip = button.Noclip
+	local safezone = button.SafeZone
+	local tp = button.Teleport
+	
+	button.MouseButton1Click:Connect(function()
+		bedestr.Visible = true
+		bedestr.Active = true
+		goonTower.Visible = true
+		goonTower.Active = true
+		InstanceWin.Visible = true
+		InstanceWin.Active = true
+		Invi.Visible = true
+		Invi.Active = true
+		killzone.Visible = true
+		killzone.Active = true
+		noclip.Visible = true
+		noclip.Active = true
+		safezone.Visible = true
+		safezone.Active = true
+		tp.Visible = true
+		tp.Active = true
+	end)
+end
+coroutine.wrap(PIRSE_fake_script)()
+local function BRUKH_fake_script() -- InfYied.LocalScript 
+	local script = Instance.new('LocalScript', InfYied)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"), true))()
+	end)
+	
+	
+end
+coroutine.wrap(BRUKH_fake_script)()
+local function RSAZH_fake_script() -- Audio.LocalScript 
+	local script = Instance.new('LocalScript', Audio)
+
+	local b = script.Parent
+	
+	b.MouseButton1Click:Connect(function()
+		local function mute(sound)
+			if not sound:IsA("Sound") then return; end
+			sound.Volume = 0;
+		end
+	
+		workspace.DescendantAdded:Connect(mute);
+		for _,s in ipairs(workspace:GetDescendants()) do
+			mute(s);
+		end
+	end)
+end
+coroutine.wrap(RSAZH_fake_script)()
+local function CYRM_fake_script() -- Remote.LocalScript 
+	local script = Instance.new('LocalScript', Remote)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+	end)
+end
+coroutine.wrap(CYRM_fake_script)()
+local function LZYI_fake_script() -- GoOnTower_2.LocalScript 
+	local script = Instance.new('LocalScript', GoOnTower_2)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+		player.Character:SetPrimaryPartCFrame(CFrame.new(-64.338, 225.467, -18.038))
+	end)
+	
+end
+coroutine.wrap(LZYI_fake_script)()
+local function BYYWT_fake_script() -- GUIFrame.UnactiveTowersButtons 
+	local script = Instance.new('LocalScript', GUIFrame)
+
+	local button0 = script.Parent.Towers
+	local button = game.Players.LocalPlayer.PlayerGui.JengaScriptGUI.GUIFrame.Towers
+	local bedestr = button0.BeDestroyer
+	local goonTower = button0.GoOnTower
+	local InstanceWin = button0.InstanceWin
+	local noclip = button0.KillZone
+	local tp = button0.Noclip
+	local button4 = script.Parent.Destroyer
+	local inf = button4.InfYied
+	local b = button4.Audio
+	local c = button4.GoOnTower
+	local e = button4.Remote
+	
+	
+	button0.MouseButton1Click:Connect(function()
+		bedestr.Visible = false
+		bedestr.Active = false
+		goonTower.Visible = false
+		goonTower.Active = false
+		InstanceWin.Visible = false
+		InstanceWin.Active = false
+		noclip.Visible = false
+		noclip.Active = false
+		tp.Visible = false
+		tp.Active = false
+		inf.Visible = false
+		inf.Active = true
+		b.Visible = true
+		b.Active = true
+		c.Visible = true
+		c.Active = true
+		e.Visible = true
+		e.Active = true
+	end)
+end
+coroutine.wrap(BYYWT_fake_script)()
+local function ITPES_fake_script() -- GUIFrame.ActiveTowersButtons 
+	local script = Instance.new('LocalScript', GUIFrame)
+
+	local button0 = script.Parent.Destroyer
+	local button = game.Players.LocalPlayer.PlayerGui.JengaScriptGUI.GUIFrame.Towers
+	local bedestr = button.BeDestroyer
+	local goonTower = button.GoOnTower
+	local InstanceWin = button.InstanceWin
+	local killzone = button.KillZone
+	local noclip = button.Noclip
+	local tp = button.Teleport
+	local button4 = script.Parent.Destroyer
+	local inf = button4.InfYied
+	local b = button4.Audio
+	local c = button4.GoOnTower
+	local e = button4.Remote
+	
+	
+	button0.MouseButton1Click:Connect(function()
+		bedestr.Visible = false
+		bedestr.Active = false
+		goonTower.Visible = false
+		goonTower.Active = false
+		InstanceWin.Visible = false
+		InstanceWin.Active = false
+		killzone.Visible = false
+		killzone.Active = false
+		noclip.Visible = false
+		noclip.Active = false
+		tp.Visible = false
+		tp.Active = false
+		inf.Visible = true
+		inf.Active = true
+		b.Visible = true
+		b.Active = true
+		c.Visible = true
+		c.Active = true
+		e.Visible = true
+		e.Active = true
+	end)
+end
+coroutine.wrap(ITPES_fake_script)()
+local function SYZPUH_fake_script() -- GUIFrame.ButtonScript 
+	local script = Instance.new('LocalScript', GUIFrame)
+
+	local b = script.Parent.Destroyer.XButton
+	local gui = game.Players.LocalPlayer.PlayerGui.JengaScriptGUI.GUIFrame
+	
+	b.MouseButton1Click:Connect(function()
+		gui.Visible = false
+	end)
+end
+coroutine.wrap(SYZPUH_fake_script)()
